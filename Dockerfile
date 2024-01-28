@@ -1,4 +1,4 @@
-FROM debian:bullseye-slim
+FROM debian
 RUN dpkg --add-architecture i386
 RUN apt update
 RUN echo 'root:your_password' | chpasswd
